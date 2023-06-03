@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="text/javascript" src="/fatec_jquery/js/jquery-3.7.0.min.js"></script>
+  <script type="text/javascript">
+    function carregar(pagina) {
+      $("#conteudo").load(pagina);
+    }
+  </script>
+
+  <title>PAG 18</title>
+</head>
+<body>
+  <div>
+    <ul>
+      <li><a onclick="carregar('pag01.html');" href="#">Soma</a></li>
+      <li><a onclick="carregar('pag02.html');" href="#">Cadastro</a></li>
+    </ul>
+    <input type="button" id="btn" value="Soma" onclick="carregar('pag01.html')" />
+    <input type="button" id="btn" value="Cadastro" onclick="carregar('pag02.html')" />
+  </div>
+  <div id="conteudo"></div>
+</body>
+</html>

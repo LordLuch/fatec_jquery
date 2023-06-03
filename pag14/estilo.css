@@ -1,0 +1,7 @@
+div {
+  background-color: red;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  float: left;
+}

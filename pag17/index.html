@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="text/javascript" src="/fatec_jquery/js/jquery-3.7.0.min.js"></script>
+  <style>
+    div {
+      background-color: #abc;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 30px;
+      left: 0px;
+      margin: 5px;
+    }
+  </style>
+  <script type="text/javascript">
+    $(document).ready(() => {
+      $("p").mouseup(function() {
+        $(this).append("<span style=\"color:#f00;\">Mouse up.</span>")
+      });
+      $("p").mousedown(function() {
+        $(this).append("<span style=\"color:#00f;\">Mouse down.</span>")
+      });
+    });
+  </script>
+  <title>PAG 14</title>
+</head>
+<body>
+  <p>Pressione o mouse aqui</p>
+</body>
+</html>
